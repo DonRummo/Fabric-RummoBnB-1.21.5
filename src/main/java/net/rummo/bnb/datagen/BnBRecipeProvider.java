@@ -37,9 +37,25 @@ public class BnBRecipeProvider extends FabricRecipeProvider
             {
                 RegistryWrapper.Impl<Item> itemlookup = registries.getOrThrow(RegistryKeys.ITEM);
 
-                /* RECIPES */
+                ///* Crafting *///
+
+                /* SHAPELESS */
+
+                /* SHAPED */
+
+                /// Litematica Tool
+                createShaped(RecipeCategory.TOOLS, BnBItems.LITEMATICA_TOOL, 1)
+                        .pattern("SC")
+                        .pattern("SS")
+                        .input('S', Items.STICK)
+                        .input('C', Items.COBBLESTONE)
+                        .criterion("has_stick", conditionsFromItem(Items.STICK))
+                        .criterion("has_cobblestone", conditionsFromItem(Items.COBBLESTONE))
+                        .offerTo(exporter);
 
                 /* COOKING */
+
+                /// Baked Apple
                 offerSmelting(
                         List.of(Items.APPLE),
                         RecipeCategory.FOOD,
