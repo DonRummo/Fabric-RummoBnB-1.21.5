@@ -2,6 +2,7 @@ package net.rummo.bnb;
 
 import net.fabricmc.api.ModInitializer;
 
+import net.rummo.bnb.item.BnBItems;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -13,6 +14,6 @@ public class RummosBitsNBaubles implements ModInitializer
 	@Override
 	public void onInitialize()
 	{
-
+		BnBItems.registerBnBItems();
 	}
 }
