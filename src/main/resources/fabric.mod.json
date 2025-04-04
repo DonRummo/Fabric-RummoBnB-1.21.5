@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "rummobnb",
+	"version": "${version}",
+	"name": "Rummo's Bits N Baubles",
+	"description": "Rummo's Bits N Baubles is a mod made by Rummo for Rummo. It adds a few bits and a twinge of baubles to the game.",
+	"authors": [
+		"Rummo!"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "MIT",
+	"icon": "assets/rummobnb/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.rummo.bnb.RummosBitsNBaubles"
+		],
+		"fabric-datagen": [
+			"net.rummo.bnb.RummosBitsNBaublesDataGenerator"
+		],
+		"client": [
+			"net.rummo.bnb.BnBClient"
+		]
+	},
+	"mixins": [
+		"rummobnb.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.12",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
