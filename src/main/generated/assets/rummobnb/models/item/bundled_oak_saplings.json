@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/generated",
+  "textures": {
+    "layer0": "rummobnb:item/bundled_oak_saplings"
+  }
+}

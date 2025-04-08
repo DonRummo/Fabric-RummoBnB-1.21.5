@@ -53,6 +53,15 @@ public class BnBRecipeProvider extends FabricRecipeProvider
                         .criterion("has_cobblestone", conditionsFromItem(Items.COBBLESTONE))
                         .offerTo(exporter);
 
+                /// Bundled Oak Saplings
+                createShaped(RecipeCategory.MISC, BnBItems.BUNDLED_OAK_SAPLINGS, 1)
+                        .pattern("OOO")
+                        .pattern("OOO")
+                        .pattern("OOO")
+                        .input('O', Items.OAK_SAPLING)
+                        .criterion("has_oak_sapling", conditionsFromItem(Items.OAK_SAPLING))
+                        .offerTo(exporter);
+
                 /* COOKING */
 
                 /// Baked Apple

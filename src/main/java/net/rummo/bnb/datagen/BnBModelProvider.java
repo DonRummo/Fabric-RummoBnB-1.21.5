@@ -26,5 +26,6 @@ public class BnBModelProvider extends FabricModelProvider
     {
         itemModelGenerator.register(BnBItems.BAKED_APPLE, Models.GENERATED);
         itemModelGenerator.register(BnBItems.LITEMATICA_TOOL, Models.GENERATED);
+        itemModelGenerator.register(BnBItems.BUNDLED_OAK_SAPLINGS, Models.GENERATED);
     }
 }
